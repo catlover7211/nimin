@@ -199,8 +199,8 @@ def sendmail():
 
     pyautogui.confirm('發送匿名?')
 
-    moveToX = 1425
-    moveToY = 287
-    num_of_clicks = 1
-    secs_between_clicks = 1
-    pyautogui.click(x=moveToX, y=moveToY, clicks=num_of_clicks, interval=secs_between_clicks, button='left')
+    # moveToX = 1425
+    # moveToY = 287
+    # num_of_clicks = 1
+    # secs_between_clicks = 1
+    # pyautogui.click(x=moveToX, y=moveToY, clicks=num_of_clicks, interval=secs_between_clicks, button='left')

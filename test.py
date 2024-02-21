@@ -1,12 +1,12 @@
-import pyautogui
-import time
+import requests
 
-time.sleep(2)
+headers = {
+  "Authorization": "Bearer YOUR_TOKEN_HERE"
+}
 
+response = requests.get('https://api.tellonym.me/tells?limit=10', headers=headers)
 
-x = 0
-y = 540
-num_seconds = 1
-pyautogui.moveTo(x, y, duration=num_seconds)  
+questions = response.json()['tells']
 
-pyautogui.scroll(clicks=-1400)
+print(questions)
+
