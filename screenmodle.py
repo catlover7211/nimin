@@ -36,6 +36,12 @@ def screen_shot():
     pyautogui.typewrite(message=text, interval=secs_between_keys)
     time.sleep(0.3)
 
+    # move # 1699 761
+    x = 1699
+    y = 761
+    num_seconds = 1
+    pyautogui.moveTo(x, y, duration=num_seconds) 
+
 
     # 截圖
     with mss.mss() as sct:
